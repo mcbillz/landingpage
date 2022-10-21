@@ -261,16 +261,16 @@ span {
   }
   .heroHeader {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 2em;
     color: #c0c0c0;
   }
   .heroP {
     text-align: left;
-    font-size: x-small;
+    font-size: xx-small;
     padding: 5px 20px;
   }
   .heroImgBak {
-    top: 720px;
+    top: 700px;
     height: 30%;
     filter: blur(70px) opacity(0.7);
   }
