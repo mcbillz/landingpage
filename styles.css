@@ -4,6 +4,7 @@
 }
 body {
   background-color: #170110;
+  color: gray;
   font-family: "Roboto Mono", monospace;
 }
 .sec0 {
@@ -136,9 +137,9 @@ span {
   padding: 16px 5px;
   font-size: 10px;
 }
-.nav-menu a.is-active,
+/* .nav-menu a.is-active,
 .nav-menu a:hover {
-}
+} */
 
 .section1 {
   display: grid;
@@ -163,9 +164,9 @@ span {
 }
 .heroImgBak {
   position: absolute;
-  top: 180px;
+  top: 230px;
   width: 25%;
-  height: 40%;
+  height: 50%;
   border-radius: 100%;
   background: linear-gradient(
     140deg,
@@ -197,6 +198,26 @@ span {
   animation: pulsate 1s ease-in-out;
 }
 
+/* SECTION 2 */
+.section2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 30px 0;
+  grid-template-areas: "sec2ImgDiv sec2Text";
+}
+.sec2Text {
+  grid-area: sec2Text;
+  padding: 25px 50px;
+}
+.sec2ImgDiv {
+  display: flex;
+  grid-area: sec2ImgDiv;
+  justify-content: center;
+  align-items: center;
+}
+.sec2Img {
+  width: 70%;
+}
 /* SECTION 5 */
 .section5 {
   text-align: center;
@@ -208,6 +229,27 @@ span {
 .sec5Img {
   width: 100%;
 }
+.sec2H3 {
+  color: #ff1ac2;
+  font-size: x-large;
+}
+.sec2P {
+  color: gray;
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(
+    140deg,
+    rgb(248, 140, 248) 1%,
+    rgb(214, 86, 250) 51%,
+    rgb(173, 7, 7) 90%
+  );
+  filter: blur(70px) opacity(0.3);
+}
+
 @keyframes caret {
   50% {
     border-color: transparent;
@@ -252,7 +294,7 @@ span {
     padding-bottom: 100px;
   }
   .section1 {
-    grid-template-columns: 1fr;;
+    grid-template-columns: 1fr;
     padding: 0;
   }
   .heroHeaderDiv {
@@ -273,5 +315,17 @@ span {
     top: 700px;
     height: 30%;
     filter: blur(70px) opacity(0.7);
+  }
+  .section2 {
+    display: grid;
+    padding: 30px 0;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "sec2Text"
+      "sec2ImgDiv";
+  }
+  .sec2Text {
+    text-align: center;
+    padding: 25px;
   }
 }

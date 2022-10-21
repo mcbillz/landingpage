@@ -5,6 +5,7 @@ hamburger.addEventListener("click", function () {
   navmenu.classList.toggle("active");
 });
 
+// TYPEWRITER TEXT
 document.addEventListener("DOMContentLoaded", function (event) {
   // array with texts to type in typewriter
   var dataText = [
@@ -37,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     if (typeof dataText[i] == "undefined") {
       setTimeout(function () {
         StartTextAnimation(0);
-      }, 20000);
+      }, 5000);
     }
     // check if dataText[i] exists
     if (i < dataText[i].length) {
