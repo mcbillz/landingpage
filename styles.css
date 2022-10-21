@@ -270,7 +270,7 @@ footer {
     font-size: x-small;
   }
   .nav {
-    position: fixed;
+    position: sticky;
     padding: 16px 10px;
   }
   .navlogo {
@@ -281,7 +281,7 @@ footer {
   }
   .nav-menu {
     /* top: 85px; */
-    position: sticky;
+    position: fixed;
     flex-direction: column;
     background-color: black;
     text-align: center;
