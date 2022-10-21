@@ -142,6 +142,11 @@ span {
 } */
 
 .section1 {
+  background-image: url("backimg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-position-x: -100px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 50px 50px 0;
@@ -265,6 +270,7 @@ footer {
     font-size: x-small;
   }
   .nav {
+    position: fixed;
     padding: 16px 10px;
   }
   .navlogo {
@@ -294,6 +300,7 @@ footer {
     padding-bottom: 100px;
   }
   .section1 {
+    background-position-y: 0;
     grid-template-columns: 1fr;
     padding: 0;
   }
