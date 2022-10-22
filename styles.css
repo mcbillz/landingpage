@@ -395,7 +395,7 @@ footer {
     padding: 0 10px;
   }
   .nftSlider {
-    --tapeSpeed: 10s;
+    --tapeSpeed: 12s;
     padding: 60px 0 30px;
   }
   @keyframes slideLeft {
